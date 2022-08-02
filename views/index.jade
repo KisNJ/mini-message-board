@@ -1,7 +1,14 @@
 extends layout
 
 block content
+  script.
+    function move() {
+      window.location.href = '/new'
+    }
   h1="Message Board"
+  div(class="container b")
+    div= goToNew
+    button(class="add-new" onclick=`move()`)="Add new message"
   each item in messages
     div(class="container")
       div= `${item.text}`

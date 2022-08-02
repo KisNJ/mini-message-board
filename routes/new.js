@@ -3,7 +3,11 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render("new",{title:"Add new user"});
 });
+router.post("/",(req,res)=>{
+  console.log(req.body)
+  res.redirect("/")
+})
 
 module.exports = router;

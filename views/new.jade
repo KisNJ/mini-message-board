@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h2="Add a new message"  
+  form(action="/new" method="POST")
+    div(class="form-section")
+        label(for="name")="Name"
+        input(type="text"  id="name" name="name")
+        label(for="text")="Text" 
+        input(type="text" id="text" name="text")
+    div
+        button="Submit message" 

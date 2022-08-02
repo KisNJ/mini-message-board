@@ -1,8 +1,68 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: blue;
 }
-
+h2,form,pre{
+  background-color: Gainsboro;
+}
+h2{
+  padding: 20px;
+}
+h1{
+  color: black;
+  font-size: 45px;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: LightSlateGray;
+  border: 1px solid black;
+  box-shadow: 1px 5px 4px 3px black;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+.container{
+  padding: 40px;
+  font-size: 25px;
+  margin: 20px;
+  border: 1px solid black;
+  box-shadow: 1px 5px 4px 3px black;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: Gainsboro;
+  font-weight: bold;
+}
+.date{
+  margin-left: 10px;
+  color: rgb(32, 32, 32);
+}
+.username{
+  margin-top: 10px;
+  color: rgb(32, 32, 32);
+}
 a {
   color: #00B7FF;
+}
+
+.form-section{
+  font-size: 20px;
+  margin: 30px;
+  display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+}
+/* .form-section>div{
+  display: flex;
+  align-items: center;
+} */
+input{
+  margin: 10px;
+  height: 40px;
+}
+button{
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-size: 25px;
 }

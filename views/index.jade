@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1="Message Board"
+  each item in messages
+    div(class="container")
+      div= `${item.text}`
+      div(class="username")=item.user
+      div(class="date")=item.added.toLocaleDateString("en-GB")
